@@ -22,7 +22,7 @@ public class ToonConfig {
     }
 
     public void setDelimiter(String delimiter) {
-        this.delimiter = delimiter;
+        this.delimiter = delimiter != null ? delimiter : ",";
     }
 
     public int getIndent() {
@@ -38,7 +38,7 @@ public class ToonConfig {
     }
 
     public void setLengthMarker(String lengthMarker) {
-        this.lengthMarker = lengthMarker;
+        this.lengthMarker = lengthMarker != null ? lengthMarker : "";
     }
 
     public String getDelimiterDisplay() {
